@@ -1,0 +1,76 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"_baseStation","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "baseStationDead",
+			"inputs": [
+				{"name":"whoKilled","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"gameObject","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAttackValue",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "getBaseStation",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"address"}
+			]
+		},
+		{
+			"name": "damage",
+			"inputs": [
+				{"name":"_damage","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getProtectionValue",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"health","type":"int256"},
+		{"name":"protectionValue","type":"uint256"},
+		{"name":"baseStation","type":"address"},
+		{"name":"attackValue","type":"uint256"}
+	]
+}
