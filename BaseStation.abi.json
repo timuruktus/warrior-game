@@ -49,6 +49,14 @@
 			"outputs": [
 				{"name":"value0","type":"uint256"}
 			]
+		},
+		{
+			"name": "getHealth",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
 		}
 	],
 	"data": [

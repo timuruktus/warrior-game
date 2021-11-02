@@ -27,6 +27,7 @@ contract GameObject is GameObjectInterface{
 
     function damage(uint _damage) external override{
         tvm.accept();
+        if(_damage <= protectionValue) return;
         health = health - int(_damage) + int(protectionValue);
         if(isObjectDead()) die(msg.sender);
     }
